@@ -17,7 +17,7 @@ then
 		echo "Instalando ClamAV"
 		yum -y install clamav clamav-devel
 	fi
-#yum update
+yum update
 fi
 
 if [ $UNAME == '"Ubuntu"' ]
@@ -30,10 +30,10 @@ then
 	if  [ -z "$CLAMAV" ] 
 	then
 		echo "Instalando ClamAV"
-		#apt install clamav
+		apt install clamav
 	fi
 	echo "actualizando"
-    #apt-get update
+    apt-get update
 fi
 
 echo "fin del script"
