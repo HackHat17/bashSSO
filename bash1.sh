@@ -11,7 +11,9 @@ yum -y install epel-release
 echo "EPEL instalado"
 #condicion para revisar si está instalado clamav, si no instalarlo
 echo "Detectando ClamAV"
-if  [yum list installed | grep clamav = ""]; then 
+CLAMAV=$(yum list installed | grep clamav)
+echo "$CLAMAV" 
+if  []; then 
 	echo "Instalando ClamAV"
 	yum -y install clamav clamav-devel
 	else
