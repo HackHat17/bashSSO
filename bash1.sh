@@ -19,7 +19,6 @@ if  ["$CLAMAV" = ""]; then
 	else
 	echo "clamAV ya se encuentra instalado"
 	fi
-fi
 yum update
 echo "fin del script"
 exit
