@@ -13,12 +13,13 @@ echo "EPEL instalado"
 echo "Detectando ClamAV"
 CLAMAV=$(yum list installed | grep clamav)
 echo "$CLAMAV" 
-if  ["$CLAMAV" = ""]; then
+if  [$CLAMAV == '']; then
 	echo "Instalando ClamAV"
 	yum -y install clamav clamav-devel
 	else
 	echo "clamAV ya se encuentra instalado"
 	fi
+fi
 yum update
 echo "fin del script"
 exit
