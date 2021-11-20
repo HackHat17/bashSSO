@@ -15,7 +15,7 @@ then
 	echo "Detectando ClamAV"
 	CLAMAV=$(yum list installed | grep clamav)
 	echo "$CLAMAV" 
-	if  (yum list -q installed clamav) 
+	if  [ yum list -q installed clamav ] 
 	then
 		echo "Instalando ClamAV"
 		yum -y install clamav clamav-devel
