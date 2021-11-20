@@ -16,9 +16,8 @@ echo "$CLAMAV"
 if  [ $CLAMAV == '' ]; then
 	echo "Instalando ClamAV"
 	yum -y install clamav clamav-devel
-	else
+else
 	echo "clamAV ya se encuentra instalado"
-	fi
 fi
 yum update
 echo "fin del script"
