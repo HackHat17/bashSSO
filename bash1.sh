@@ -4,9 +4,10 @@ echo "Detectando SO"
 UNAME=$(awk -F= '/^NAME/{print $2}' /etc/os-release)
 #imprimir OS
 echo "El sistema es: "
+echo "$UNAME"
 if ( "$UNAME" = "CentOS Linux" )
 then
-	echo "$UNAME"
+	
 	echo "Instalando EPEL"
 	yum -y install epel-release
 	echo "EPEL instalado"
