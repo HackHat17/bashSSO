@@ -14,13 +14,12 @@ if [[ $UNAME = "CentOS Linux" ]]; then
 	echo "Detectando ClamAV"
 	CLAMAV=$(yum list installed | grep clamav)
 	echo "$CLAMAV" 
-	if  [[ -z $CLAMAV ]]; then
+	#if  [[ -z $CLAMAV ]]; then
 		echo "Instalando ClamAV"
 		yum -y install clamav clamav-devel
-	fi
-yum update
+	#fi
+#yum update
 echo "fin del script"
 fi
 #condicional de SO
-
 exit
