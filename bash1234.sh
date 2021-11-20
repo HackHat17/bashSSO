@@ -46,6 +46,7 @@ else
 			yum update
 		else 
 			echo "actualización cancelada"
+		fi
 
 
 fi
